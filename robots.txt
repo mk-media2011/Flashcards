@@ -1,0 +1,117 @@
+# Strikte robots.txt voor flashcard.page.gd
+# Alleen legitieme zoekmachines toegestaan
+
+# Standaardbeleid: Blokker alles
+User-agent: *
+Disallow: /
+
+# Google: Volledige toegang
+User-agent: Googlebot
+Allow: /
+Disallow: /system/
+Disallow: /test/
+Disallow: /error/
+Disallow: /admin.php
+Disallow: /config.php
+
+# Bing: Volledige toegang
+User-agent: Bingbot
+Allow: /
+Disallow: /system/
+Disallow: /test/
+Disallow: /error/
+Disallow: /admin.php
+Disallow: /config.php
+
+# Meta/Facebook/WhatsApp: Voor sociale media preview
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+# LinkedIn: Voor LinkedIn integratie
+User-agent: LinkedInBot
+Allow: /
+
+# Apple: Voor Siri en andere Apple-diensten
+User-agent: Applebot
+Allow: /
+
+# AI Chatbots & Browsing (Toegestaan)
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: web-search
+Allow: /
+
+# AI Training & Crawling (GEBLOKKEERD)
+User-agent: GPTBot
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: Omgili
+Disallow: /
+
+User-agent: cohere-ai
+Disallow: /
+
+User-agent: Diffbot
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: Bytedance
+Disallow: /
+
+User-agent: MojeekBot
+Disallow: /
+
+User-agent: PetalBot
+Disallow: /
+
+User-agent: Scrapy
+Disallow: /
+
+User-agent: curl
+Disallow: /
+
+User-agent: wget
+Disallow: /
+
+# Andere aggressieve bots: BLOKKEN
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: MegaIndex
+Disallow: /
+
+# Sitemap
+Sitemap: https://flashcard.page.gd/sitemap.xml
